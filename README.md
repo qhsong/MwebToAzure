@@ -11,6 +11,6 @@ MWeb to Azure Storage Service
 我个人提供了一个入口，如果你不放心的话，你也可以自己架设:
 配置方式如下图所示:
 
-![img](https://qhsong.blob.core.windows.net/qhsong-blog/2016/08/intro.png)
+![MWebToAzure](https://qhsong.blob.core.windows.net/qhsong-blog/2016/08/intro.png)
 
 当然，你可以folk我的代码再架设一份自己私有的空间。
