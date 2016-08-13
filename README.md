@@ -26,4 +26,4 @@ MWeb to Azure Storage Service
 * `azureContainer`: Azure Storage Container名称，如果不存在会新建
 
 
-当然，你可以folk我的代码再架设一份自己私有的空间。
+当然，你可以folk我的代码再架设一份在自己私有的空间。
