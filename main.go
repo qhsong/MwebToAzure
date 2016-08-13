@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 
 	"strings"
@@ -22,7 +21,6 @@ func UploadImgToAzureHandler(c *gin.Context) {
 	azureName := c.PostForm("azureName")
 	azureContainer := c.PostForm("azureContainer")
 	appendDate := c.PostForm("appendDate")
-	fmt.Println(azureContainer, azureKey, azureName)
 
 	if strings.ToLower(appendDate) == "true" {
 		filename = time.Now().Format("2006/01/") + filename
