@@ -9,9 +9,9 @@ MWeb to Azure Storage Service
 如果可能，未来也会支持更多的图床，欢迎给我提issus，PR。
 
 我个人提供了一个入口，如果你不放心的话，你也可以自己架设:
-配置方式如下图所示（看不到图片请直接点击链接https://qhsong.blob.core.windows.net/qhsong-blog/2016/08/intro.png）:
+配置方式如下图所示(看不到图片请直接点击链接 https://qhsong.blob.core.windows.net/qhsong-blog/2016/08/intro.png ):
 
-![MWebToAzure](https://qhsong.blob.core.windows.net/qhsong-blog/2016/08/intro.png)
+![](https://qhsong.blob.core.windows.net/qhsong-blog/2016/08/intro.png)
 
 
 或者可以使用如下配置参数：
