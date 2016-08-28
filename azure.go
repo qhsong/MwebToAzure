@@ -44,6 +44,20 @@ func UploadFileToAzure(file []byte, filename, azureName, azureKey, azureContaine
 
 	blobService.PutBlockList(azureContainer, filename, []storage.Block{{blockID, storage.BlockStatusUncommitted}})
 
+	//Set content type
+	fileA := strings.Split(filename, ".")
+	postfix := fileA[len(fileA)-1]
+	contentType := ""
+	if postfix == "jpg" || postfix == "jpge" {
+		contentType = "image/jpeg"
+	} else {
+		contentType = "image/" + postfix
+	}
+	err = blobService.SetBlobProperties(azureContainer, filename, storage.BlobHeaders{ContentType: contentType})
+	if err != nil {
+		return "", err
+	}
+
 	url := blobService.GetBlobURL(azureContainer, filename)
 	return url, nil
 }
